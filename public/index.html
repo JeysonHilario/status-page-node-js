@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status da Conexão</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .resized-image {
+      width: 200px; /* Reduz a largura */
+      height: auto; /* Mantém a proporção */
+    }
+
+    h1 {
+      text-align: center;
+      color: #0078d7;
+    }
+
+    .status-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fafafa;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .status-box:hover {
+      background-color: #f0f8ff;
+    }
+
+    .status-label {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .status-value {
+      font-size: 22px;
+      color: #333;
+    }
+
+    .status-value.good {
+      color: #28a745;
+    }
+
+    .status-value.medium {
+      color: #ffc107;
+    }
+
+    .status-value.bad {
+      color: #dc3545;
+    }
+    .title{
+       display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+    <script>console.log()</script> 
+    <div class="container">
+      <div class="title">
+        <h1>Status LINK Isptec</h1>
+        <img src="./img/hilink.png" class="resized-image" alt="">
+      </div>
+      <div class="status-box">
+        <span class="status-label">Status Link </span>
+        <span class="status-value good" id="status-isptec"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Tempo de Resposta (Ping):</span>
+        <span class="status-value good" id="pingIsptec"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Trafego de Upload:</span>
+        <span class="status-value good" id="uploadIsptec"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Trafego de Download:</span>
+        <span class="status-value good" id="downloadIsptec"></span>
+      </div>
+      <div class="title"> 
+        <h1>Status Link Proxxima</h1>
+        <img src="./img/hilink.png" class="resized-image" alt="">
+      </div>
+
+      <div class="status-box">
+        <span class="status-label">Status Link</span>
+        <span class="status-value good" id="status-proxxima"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Tempo de Resposta (Ping):</span>
+        <span class="status-value good" id="pingProxxima"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Velocidade de Upload:</span>
+        <span class="status-value good" id="uploadProxxima"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Velocidade de Download:</span>
+        <span class="status-value good" id="downloadProxxima"></span>
+      </div>
+      <h1>Status Serviços</h1>
+      <div class="status-box">
+        <span class="status-label">Tempo de Resposta (Ping) WatchTV:</span>
+        <span class="status-value good" id="pingWatch"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Tempo de Resposta(Ping)DNS Google:</span>
+        <span class="status-value good" id="pingDNSGoogle"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Tempo de Resposta (Ping) Epic Games(Fortnite):</span>
+        <span class="status-value good" id="pingEpicGames"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Tempo de Resposta (Ping) Instagram:</span>
+        <span class="status-value good" id="pingInstagram"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Tempo de Resposta (Ping) Facebook:</span>
+        <span class="status-value good" id="pingFacebook"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Tempo de Resposta (Ping) Whatsapp:</span>
+        <span class="status-value good" id="pingWhatsapp"></span>
+      </div>
+      <div class="status-box">
+        <span class="status-label">Tempo de Resposta (Ping) Youtube:</span>
+        <span class="status-value good" id="pingYoutube"></span>
+      </div>
+
+    </div>
+
+  <footer>
+    Dados atualizados em tempo real | HiLink Provedor de Internet
+  </footer>
+  <script src="./scripts/status.js"></script>
+</body>
+</html>
+
